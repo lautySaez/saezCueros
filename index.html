@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Saez Cueros</title>
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saez Cueros</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Bienvenidos a Sáez Cueros</h1>
-    <p>Próximamente más contenido...</p>
+
+  <!-- Header con el isotipo -->
+  <header class="header">
+    <img src="img/logo.jpg" alt="Logo Toro Buenos Aires" class="logo" />
+    <h1 class="titulo">Saez Cueros</h1>
+  </header>
+
+  <section class="caratula">
+    <div class="caratula-contenido">
+      <h2>Bienvenido a Saez Cueros</h2>
+      <p>Artesanía argentina en cuero, diseñada para durar toda la vida.</p>
+      <a href="#productos" class="btn-ver-productos">Ver productos</a>
+    </div>
+  </section>
+  
+  <!-- Carrusel -->
+  <section class="carrusel">
+    <div class="carrusel-imagenes">
+      <img src="img/carrusel1.jpg" class="activa" alt="Producto 1">
+      <img src="img/carrusel2.jpg" alt="Producto 2">
+      <img src="img/carrusel3.jpg" alt="Producto 3">
+    </div>
+
+    <a class="flecha izquierda">&#10094;</a>
+    <a class="flecha derecha">&#10095;</a>
+
+    <div class="puntos">
+      <span class="punto activo"></span>
+      <span class="punto"></span>
+      <span class="punto"></span>
+    </div>
+  </section>
+
+  <hr class="linea-dorada" />
+
+  <!-- Productos listados -->
+
+  <section id="productos" class="productos-lista fade-in-up">
+
+  <section class="productos-lista fade-in-up">
+    
+    <a href="pages/cinturon1.html" class="producto-link">
+      <article class="producto producto-card">
+        <img src="img/cinturon1.jpg" alt="Cinturón de cuero" />
+        <div class="producto-info">
+          <h2>Cinturón de cuero negro</h2>
+          <p>%100 cuero con costuras y hebilla premium. Presentación: caja de plástico negra.</p>
+        </div>
+      </article>
+    </a>
+
+    <article class="producto producto-card">
+      <img src="img/billetera1.jpg" alt="Billetera de cuero" />
+      <div class="producto-info">
+        <h2>Billetera dolar basica</h2>
+        <p>%100 cuero negro, costura reforzada y múltiples compartimientos.</p>
+      </div>
+    </article>
+
+    <article class="producto producto-card">
+      <img src="img/cinturon2.jpg" alt="cinturon de cuero 2" />
+      <div class="producto-info">
+        <h2>Cinturon de cuero caramelo</h2>
+        <p>%100 cuero, detalles en costura y terminación pulida. Ideal para regalo.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Saez Cueros. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script de comportamiento -->
+  <script src="main.js"></script>
 </body>
 </html>
+
